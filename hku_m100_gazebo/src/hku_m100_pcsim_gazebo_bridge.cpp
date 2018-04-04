@@ -246,7 +246,7 @@ int main(int argc, char **argv)
   ros::NodeHandle n;
 
  
-  attitude_quaternion_subscriber = n.subscribe("/dji_sdk/attitude_quaternion", 1000, attitudeQuaternionCallback);
+  attitude_quaternion_subscriber = n.subscribe("/dji_sdk/attitude", 1000, attitudeQuaternionCallback);
   velocity_subscriber = n.subscribe("/dji_sdk/velocity", 1000, velocityCallback);
   local_position_subscriber = n.subscribe("/dji_sdk/local_position", 1000, localPositionCallback);
   // gimbal_orientation_subscriber = n.subscribe("/dji_sdk/gimbal", 1000, gimbalOrientationCallback);
@@ -260,7 +260,7 @@ int main(int argc, char **argv)
 
   ROS_INFO("Bridge between PC sim and gazebo connected");
 
-  ros::Rate spin_rate(200);
+  ros::Rate spin_rate(10);
 
   while(ros::ok())
   {

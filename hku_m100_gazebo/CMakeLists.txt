@@ -10,6 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   dji_sdk
   tf
+
   
 )
 ## System dependencies are found with CMake's conventions
@@ -105,7 +106,7 @@ set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES hku_m100_gazebo
-#  CATKIN_DEPENDS other_catkin_pkg
+  CATKIN_DEPENDS velodyne_description
 #  DEPENDS system_lib
 )
 

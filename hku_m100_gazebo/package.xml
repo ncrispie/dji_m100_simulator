@@ -51,6 +51,7 @@
   <run_depend>std_msgs</run_depend>
   <run_depend>dji_sdk</run_depend>
   <run_depend>tf</run_depend>
+  <run_depend>velodyne_description</run_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>

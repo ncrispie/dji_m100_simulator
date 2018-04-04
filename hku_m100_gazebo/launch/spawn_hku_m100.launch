@@ -2,7 +2,8 @@
 
 <launch>
   <arg name="name" default="hku_m100"/>
-  <arg name="model" default="$(find hku_m100_description)/urdf/hku_m100.urdf.xacro"/>
+  <!-- <arg name="model" default="$(find hku_m100_description)/urdf/hku_m100.urdf.xacro"/> -->
+  <arg name="model" default="$(find hku_m100_description)/urdf/dji_m100_VLP16_combined.urdf.xacro"/>
   <arg name="tf_prefix" default="$(optenv ROS_NAMESPACE)"/>
 
   <arg name="x" default="3.0"/>
